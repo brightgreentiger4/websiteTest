@@ -1,9 +1,12 @@
 const myElement = document.getElementById("coolText")
+
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 var i = 0;
 while (true) {
     i++;
-    console.log(myElement)
+    console.log(myElement);
     myElement.textContent = i;
 
-    new Promise(resolve => setTimeout(resolve, 1000))
+    sleep(1000);    
 }
