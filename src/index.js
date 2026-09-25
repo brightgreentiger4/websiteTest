@@ -2,7 +2,8 @@ const myElement = document.getElementById("coolText")
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-var i = 0;
+async function main() {
+    var i = 0;
 while (true) {
     i++;
     console.log(myElement);
@@ -12,3 +13,7 @@ while (true) {
     }
     sleep(1000);
 }
+
+
+}
+main();
