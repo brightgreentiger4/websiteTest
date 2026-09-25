@@ -11,7 +11,7 @@ while (true) {
     if (i>1000) {
         break;
     }
-    sleep(1000);
+    await sleep(1000);
 }
 
 
