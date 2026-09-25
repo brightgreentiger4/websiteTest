@@ -7,6 +7,8 @@ while (true) {
     i++;
     console.log(myElement);
     myElement.textContent = i;
-
-    sleep(1000);    
+    if (i>1000) {
+        break;
+    }
+    sleep(1000);
 }
